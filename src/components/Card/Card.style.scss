@@ -1,0 +1,47 @@
+.CardList_item{
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #95dada;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.5s ease-out;
+    &:hover{
+        transform: scale(1.05);
+        transition: all 0.5s ease-in;
+    }
+
+    img{
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+
+    h3, p{
+        margin: 5px 0;
+    }
+
+    address {
+        position: relative;
+        font-size: 14px;
+        margin-top: 8px;
+        padding-top: 8px;
+        display: inline-block;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 60px;
+            height: 1px;
+            border-radius: 5px;
+            margin: 0 auto 5px auto;
+            background-color: lighten( #000000, 40%);
+        }
+        span{
+            color: lighten( #000000, 40%);
+            margin: 0 2px;
+            font-weight: 500;
+        }
+    }
+}
